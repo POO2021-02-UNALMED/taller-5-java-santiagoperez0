@@ -1,4 +1,4 @@
-ackage zooAnimales;
+package zooAnimales;
 
 import gestion.Zona;
 import java.util.ArrayList;
