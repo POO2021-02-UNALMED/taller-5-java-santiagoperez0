@@ -24,28 +24,37 @@ public class Ave extends Animal {
         this.colorPlumas = colorPlumas;}
 
     public Ave() {
-        listado.add(this);}
+        listado.add(this);
+      }
 
     public Ave( String nombre, int edad, String habitat, String genero,String colorPlumas) {
         super(nombre, edad, habitat, genero);
-        this.colorPlumas = colorPlumas;}
+        this.colorPlumas = colorPlumas;
+      }
 
     public static Ave crearHalcon(String nombre, int edad, String genero) {
         Ave halcon = new Ave( nombre, edad, "montanas", genero,"cafe glorioso");
         halcones++;
         listado.add(halcon);
-        return halcon;}
+        return halcon;
+      }
 
     public static Ave crearAguila(String nombre, int edad, String genero) {
         Ave aguila = new Ave( nombre, edad, "montanas", genero,"blanco y amarillo");
         aguilas++;
         listado.add(aguila);
-        return aguila;}
+        return aguila;
+      }
 
     public static int cantidadAves() {
-        return listado.size();}
+        return listado.size();
+      }
 
-    public String movimiento() {
+      public String movimiento() {
+              return "volar";
+            }
+
+      }
         return "volar";}
 
 }
