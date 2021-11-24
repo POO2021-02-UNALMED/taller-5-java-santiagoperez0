@@ -1,50 +1,49 @@
 package gestion;
+
 import java.util.ArrayList;
+import zooAnimales.*;
 
 public class Zoologico {
-	private String nombre;
-	private String ubicacion;
-	private ArrayList<Zona> zonas = new ArrayList<Zona>();
+    private String nombre;
+    private String ubicacion;
+    private ArrayList<Zona> zonas = new ArrayList();
 
-	public Zoologico() {
-	}
+    public Zoologico(){}
 
-	public Zoologico(String nombre, String ubicacion) {
-		this.nombre = nombre;
-		this.ubicacion = ubicacion;
-	}
-	public void agregarZonas(Zona zona){
+    public Zoologico(String nombre, String ubicacion) {
+        this.nombre = nombre;
+        this.ubicacion = ubicacion;}
 
-		zonas.add(zona);
+    public String getUbicacion() {
+        return ubicacion;}
 
-	}
-	public int cantidadTotalAnimales() {
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;}
 
-		return zonas.size();
+    public String getNombre() {
+        return nombre;}
 
-	}
-	public ArrayList<Zona> getZona() {
-		return zonas;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;}
 
-	}
-	public void setZona(ArrayList<Zona> zona) {
-		this.zonas=zona;
+    public ArrayList<Zona> getZona() {
+        return zonas;}
 
-	}
-	public String getNombre() {
-		return nombre;
+    public void setZonas(ArrayList<Zona> zonas) {
+        this.zonas = zonas;}
 
-	}
-	public void setNombre(String nombre) {
-		this.nombre=nombre;
+    public Zoologico(String nombre, String ubicacion, ArrayList zonas) {
+        this.nombre = nombre;
+        this.ubicacion = ubicacion;
+        this.zonas = zonas;}
 
-	}
-	public String getUbicacion() {
-		return ubicacion;
+    public void agregarZonas(Zona zona) {
+        zona.setZoo(this);
+        zonas.add(zona);}
 
-	}
-	public void setUbicacion(String ubicacion) {
-		this.ubicacion=ubicacion;
-	}
-
+    public int cantidadTotalAnimales() {
+        int suma = 0;
+        for (int i = 0; i < zonas.size(); i++) {
+            suma += zonas.get(i).cantidadAnimales();
+        }return suma;}
 }
