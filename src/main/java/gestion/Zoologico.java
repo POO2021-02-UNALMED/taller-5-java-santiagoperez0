@@ -14,12 +14,12 @@ public class Zoologico {
 		this.ubicacion = ubicacion;
 	}
 	public void agregarZonas(Zona zona){
-		//agregar nuevas zonas al zoologico
+
 		zonas.add(zona);
 
 	}
 	public int cantidadTotalAnimales() {
-		//cantidad animales de todas las zonas que tengan relacion con el zoologico
+
 		return zonas.size();
 
 	}
