@@ -1,4 +1,4 @@
-package zooAnimales;
+ackage zooAnimales;
 
 import gestion.Zona;
 import java.util.ArrayList;
@@ -12,16 +12,20 @@ public class Reptil extends Animal {
     private int largoCola;
 
     public Reptil() {
-        listado.add(this);}
+        listado.add(this);
+      }
 
     public static ArrayList<Reptil> getListado() {
-        return listado;}
+        return listado;
+      }
 
     public static void setListado(ArrayList<Reptil> listado) {
-        Reptil.listado = listado;}
+        Reptil.listado = listado;
+      }
 
     public String getColorEscamas() {
-        return colorEscamas;}
+        return colorEscamas;
+      }
 
     public void setColorEscamas(String colorEscamas) {
         this.colorEscamas = colorEscamas;
@@ -58,6 +62,12 @@ public class Reptil extends Animal {
     public static int cantidadReptiles() {
         return listado.size();
       }
+
+    public String movimiento() {
+        return "reptar";
+      }
+
+}
 
     public String movimiento() {
         return "reptar";}
