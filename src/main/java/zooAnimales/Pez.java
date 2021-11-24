@@ -62,7 +62,11 @@ public class Pez extends Animal {
         return listado.size();
       }
 
-    public String movimiento() {
-        return "nadar";}
+    @Override
+  	public String movimiento() {
+  		return "nadar";
+    }
+
+  	}
 
 }
