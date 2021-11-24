@@ -65,7 +65,8 @@ public class Reptil extends Animal {
 
     public string movimiento() {
         return "reptar";
-      }
+
+    }
 
 }
 
