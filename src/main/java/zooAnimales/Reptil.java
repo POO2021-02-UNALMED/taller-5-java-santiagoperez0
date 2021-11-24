@@ -23,7 +23,7 @@ public class Reptil extends Animal {
         Reptil.listado = listado;
       }
 
-    public string getColorEscamas() {
+    public String getColorEscamas() {
         return colorEscamas;
       }
 
@@ -63,7 +63,7 @@ public class Reptil extends Animal {
         return listado.size();
       }
 
-    public string movimiento() {
+    public String movimiento() {
         return "reptar";
     }
 
