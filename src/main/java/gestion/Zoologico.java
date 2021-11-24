@@ -9,22 +9,24 @@ public class Zoologico {
 	public Zoologico() {
 	}
 
-	public Zoologico(String nombre, String ubicacion, ArrayList<Zona> zonas) {
+	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
-		this.zonas = zonas;
 	}
 	public void agregarZonas(Zona zona){
-	
+		//agregar nuevas zonas al zoologico
 		zonas.add(zona);
 
 	}
 	public int cantidadTotalAnimales() {
-
+		//cantidad animales de todas las zonas que tengan relacion con el zoologico
 		return zonas.size();
 
 	}
+	public ArrayList<Zona> getZona() {
+		return zonas;
 
+	}
 	public void setZona(ArrayList<Zona> zona) {
 		this.zonas=zona;
 
