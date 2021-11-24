@@ -62,5 +62,6 @@ public class Anfibio extends Animal {
       }
 
     public String movimiento() {
-        return "saltar";}
+        return "saltar";
+    }
 }

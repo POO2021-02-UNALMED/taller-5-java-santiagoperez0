@@ -48,13 +48,10 @@ public class Ave extends Animal {
 
     public static int cantidadAves() {
         return listado.size();
-      }
+    }
 
-      public String movimiento() {
-              return "volar";
-            }
-
+    public String movimiento() {
+        return "volar";
       }
-        return "volar";}
 
 }
