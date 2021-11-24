@@ -9,9 +9,9 @@ public class Mamifero extends Animal {
 	private String habitat;
 	private String genero;
 	private Zona zona;
-	private ArrayList<Mamifero> listado; //atributo listado donde se almacena cada objeto al ser creado
-	public int caballos=0; //conteo de veces que se uso el método crearCaballo
-	public int leones=0; //crearLeon
+	private ArrayList<Mamifero> listado; 
+	public int caballos=0;
+	public int leones=0;
 	private boolean pelaje;
 	private int patas;
 
